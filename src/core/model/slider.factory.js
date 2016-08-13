@@ -680,6 +680,14 @@
       return value;
     };
 
+    Slider.prototype.getMinValue = function(){
+      return self.getValue().split(';')[0];
+    }
+
+    Slider.prototype.getMaxValue = function( value ){
+      return self.getValue().split(';')[1];
+    }
+
     return Slider;
 
   }]);
